@@ -30,6 +30,7 @@
                     return nav.navigate(Application.navigator.home);
                 }
             }));
+            app.onsettings = loadSettings;
         }
     });
 
@@ -40,6 +41,37 @@
         // suspended, call args.setPromise().
         app.sessionState.history = nav.history;
     };
+
+    function loadSettings(e) {
+        e.detail.applicationcommands =
+        {
+            "Settings":
+                {
+                    title: "Game Settings",
+                    href: "/pages/settings/settings.html"
+                },
+            "Cheats":
+                {
+                    title: "Enter Cheats",
+                    href: "/pages/cheats/cheats.html"
+                }
+        };
+        WinJS.UI.SettingsFlyout.populateSettings(e);
+    }
+
+
+    Date.prototype.getWeek = function () {
+        var determinedate = new Date();
+        determinedate.setFullYear(this.getFullYear(), this.getMonth(), this.getDate());
+        var D = determinedate.getDay();
+        if (D == 0) D = 7;
+        determinedate.setDate(determinedate.getDate() + (4 - D));
+        var YN = determinedate.getFullYear();
+        var ZBDoCY = Math.floor((determinedate.getTime() - new Date(YN, 0, 1, -6)) / 86400000);
+        var WN = 1 + Math.floor(ZBDoCY / 7);
+        return WN;
+    }
+
 
     app.start();
 })();

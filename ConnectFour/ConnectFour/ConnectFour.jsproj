@@ -47,12 +47,14 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>ConnectFour_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>ConnectFour_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>32F7339F79BC034FD4C7D11E8607760266B22531</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="ConnectFour_StoreKey.pfx" />
     <Content Include="css\default.css" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
@@ -60,13 +62,46 @@
     <Content Include="images\storelogo.png" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="js\settings.js" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="pages\cheats\cheats.css" />
+    <Content Include="pages\cheats\cheats.html" />
+    <Content Include="pages\cheats\cheats.js" />
+    <Content Include="pages\game\game.html" />
+    <Content Include="pages\game\js\ai.js" />
+    <Content Include="pages\game\js\easing.js" />
+    <Content Include="pages\game\js\game.js" />
+    <Content Include="pages\game\js\jquery.js" />
+    <Content Include="pages\game\js\recursiveai.js" />
+    <Content Include="pages\game\mask.png" />
+    <Content Include="pages\game\mask.svg" />
+    <Content Include="pages\game\styles\main.css" />
+    <Content Include="pages\game\styles\themes\blue.css" />
+    <Content Include="pages\game\styles\themes\blue.svg" />
+    <Content Include="pages\game\styles\themes\contrast.svg" />
+    <Content Include="pages\game\styles\themes\dark.css" />
+    <Content Include="pages\game\styles\themes\gray.css" />
+    <Content Include="pages\game\styles\themes\green.css" />
+    <Content Include="pages\game\styles\themes\green.svg" />
+    <Content Include="pages\game\styles\themes\hell.css" />
+    <Content Include="pages\game\styles\themes\hell.svg" />
+    <Content Include="pages\game\styles\themes\indecisive.css" />
+    <Content Include="pages\game\styles\themes\indecisive.svg" />
+    <Content Include="pages\game\styles\themes\retro.css" />
+    <Content Include="pages\game\styles\themes\retro.svg" />
+    <Content Include="pages\game\styles\themes\rny.css" />
+    <Content Include="pages\game\styles\themes\rny.svg" />
+    <Content Include="pages\game\styles\themes\standard.css" />
+    <Content Include="pages\game\styles\themes\contrast.css" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
     <Content Include="pages\game\game.css" />
-    <Content Include="pages\game\game.html" />
     <Content Include="pages\game\game.js" />
+    <Content Include="pages\settings\settings.css" />
+    <Content Include="pages\settings\settings.html" />
+    <Content Include="pages\settings\settings.js" />
     <None Include="ConnectFour_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

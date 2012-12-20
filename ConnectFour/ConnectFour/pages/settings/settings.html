@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <!-- WinJS references -->
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    <link href="settings.css" rel="stylesheet">
+    <script src="settings.js"></script>
+
+</head>
+<body>
+    <div class="settings fragment">
+        <div id="Settings" data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{width: 'narrow'}">
+            <div class="SettingsPane">
+                <div class="win-label">
+                    <button onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton">
+                    </button>
+                    <span class="SettingsTitle">Settings</span>
+                </div>
+                <article class="SettingsContent">
+
+                    <div id="moveSounds" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title:'Move Sounds'}">
+			        </div>
+
+                    <br />
+                    
+                    <div id="themeMusic" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title:'Theme Music'}">
+			        </div>
+
+                    <br />
+
+                    <div class="win-title" role="note">First Move</div>
+                    <input type="radio" value="1" id="1Move" name="firstmoveRadio" /><label for="1Move">You</label><br /> 
+                    <input type="radio" value="2" id="2Move" name="firstmoveRadio" /><label for="2Move">Computer</label><br />
+                    <input type="radio" value="3" id="3Move" name="firstmoveRadio" /><label for="3Move">Randomize</label>
+
+                    <br /> <br />
+
+                    <div class="win-title" role="note">Computer Difficulty</div>
+                    <input type="radio" value="extreme" id="extremeDiff" name="difficultyRadio" /><label for="extremeDiff">Extreme</label><br /> 
+                    <input type="radio" value="hard" id="hardDiff" name="difficultyRadio" /><label for="hardDiff">Hard</label><br />
+                    <input type="radio" value="normal" id="normalDiff" name="difficultyRadio" /><label for="normalDiff">Normal</label><br />
+                    <input type="radio" value="easy" id="easyDiff" name="difficultyRadio" /><label for="easyDiff">Easy</label>
+                    
+                    <br /> <br />
+
+                    <div class="win-title" role="note">Theme</div>
+                    <select id="themeSelect" aria-label="Theme select control">
+                    </select>
+                    <br /><br />
+                    <button id="buyThemes">Buy More Themes!</button>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

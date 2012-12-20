@@ -1,0 +1,48 @@
+﻿/* 
+ * 
+ * Red And Yellow Theme
+ * 
+ */
+
+.playerOne.rny {
+	background: #FF0000;
+}
+
+.playerTwo.rny {
+	background: #FFCC00;
+}
+
+.ihover.one.rny {
+	background-color: #FF5454;
+}
+.ihover.two.rny {
+	background-color: #FFE063;
+}
+
+.mask.rny {
+	background-image: url('rny.svg');
+}
+
+.masker.rny {
+	width: 100%;
+	height: 100%;
+    background-image: -ms-radial-gradient(rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+}
+
+.win-backbutton.rny:hover { 
+    border-color: white;
+    background-color:rgba(255, 255, 255, 0.13);
+    border-bottom-color:rgb(255, 255, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    border-top-color:rgb(255, 255, 255);
+}
+.win-backbutton.rny {
+    color: white;
+    border-color: white;
+    background-color:transparent;
+    border-bottom-color:rgb(255, 255, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    border-top-color:rgb(255, 255, 255);
+}

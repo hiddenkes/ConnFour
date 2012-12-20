@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>cheats</title>
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="cheats.css" rel="stylesheet" />
+    <script src="cheats.js"></script>
+</head>
+<body>
+    <div class="cheats fragment">
+        <div id="Cheats" data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{width: 'narrow'}">
+            <div class="SettingsPane">
+                <div class="win-label">
+                    <button onclick="WinJS.UI.SettingsFlyout.show()" type="button" class="win-backbutton">
+                    </button>
+                    <span class="SettingsTitle">Cheats</span>
+                </div>
+                <article class="SettingsContent">
+                    <div>
+                        Have a code to unlock content? Enter it below!
+                        <br />
+                        <input style="margin: 15px 0;" id="cheatCode" />
+                        <br />
+                        <button id="cheatSubmit">Submit</button>
+                        <div style="margin-top: 30px;" id="cheatResponse">
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

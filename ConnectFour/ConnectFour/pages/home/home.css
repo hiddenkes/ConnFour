@@ -1,38 +1,124 @@
-﻿#host {
+﻿#hostMain {
 	background-color: #000;	
 }
 
-.mask {
+.maskMain {
 	width: 100%;
 	height: 100%;
-	background-image: -ms-radial-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%); 
+	background-image: -ms-radial-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 100%); 
 }
 
-.stripes {
+.stripesMain {
 	height: 100%;
 	width: 100%;
 	background-size: 150px 150px; /* Controls the size of the stripes */
 }
 
-.angled {
-   background-color: #ac0;
+.angledMain {
+    background-color: #ac0;
 	background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
 						transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
 						transparent 75%, transparent);
 }
 
-.homepage section[role=main] {
-    margin-left: 120px;
+.fragment.homepage {
+    padding-top: 80px;
+    text-align:center;
+    position: relative;
+    z-index: 50;
 }
 
-@media screen and (-ms-view-state: snapped) {
-    .homepage section[role=main] {
-        margin-left: 20px;
-    }
+.appTitle {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (-ms-view-state: portrait) {
-    .homepage section[role=main] {
-        margin-left: 100px;
-    }
+.button {
+    box-sizing:border-box;
+    margin: 20px;
+    color: black;
+    padding: 20px 20px;
+    width: 300px;
+    background-color: #bf4040;
+    border: 2px solid #853030;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), -2px -2px 0px rgba(255, 255, 255, 0.1);
+}
+.button:hover {
+    background-color: #CF5757;
+    border: 2px solid #662B32;
+    opacity: 0.9;
+}
+
+.buttonContainer {
+    position: absolute;
+    left: 50%;
+    margin-left: -170px;
+    transition: all 0.7s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.buttonContainer.right {
+    margin-left: 170px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.buttonContainer.left {
+    margin-left: -510px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#shadowForTiles {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: -ms-radial-gradient(rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%);
+    overflow: visible;
+}
+
+#traverseMenu {
+    position: absolute;
+    left: 50%;
+    margin-left: -220px;
+    margin-top: 12px;
+    transition: all 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+}
+.traverHidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+
+
+
+
+
+
+
+#droppers {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 40;
+}
+.simdrop {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    border-radius: 100px;
+}
+.simdrop.simone {
+    background-color: #bf4040;
+}
+.simdrop.simtwo {
+    background-color: #4040bf;
 }

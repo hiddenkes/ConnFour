@@ -1,0 +1,132 @@
+* {
+	-ms-user-select: none;
+}
+
+#host {
+	background-color: #000;	
+	height: 100%;
+	min-height: 100%;
+}
+
+.masker {
+	height: 100%;
+	background-image: -webkit-radial-gradient(center center, circle contain, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.8) 100%); /* New WebKit syntax */  
+	background-image: -ms-radial-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 100%); 
+}
+
+.stripes {
+	height: 100%;
+	width: 100%;
+	background-size: 150px 150px; /* Controls the size of the stripes */
+}
+
+.angled {
+	background-color: #ac0;
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+html,body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#main {
+	padding-top: 0px;
+}
+
+#eltable {
+	margin: 0px auto;
+}
+
+.startNew {
+	margin-top: 50px;
+}
+
+.title {
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.details {
+	margin-top: 40px;
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+.winner {
+	box-sizing:border-box;
+	padding: 100px;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 700px;
+	height: 600px;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+	z-index: 1000;
+	visibility: hidden;
+	color: #fff;
+	text-align: center;
+}
+.winner.showing {
+	visibility: visible;
+	opacity: 1;
+}
+.winner.hidden {
+	opacity: 0;
+}
+
+.piece {
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	background-color: white;
+	padding: 10px;
+}
+
+.playerPiece {
+	left: 0px;
+	top: 0px;
+	pointer-events:none;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	margin: 10px;
+	position: relative;
+	z-index: 10;
+}
+
+table {
+	/*Border shadow doesn't display on IE if we use this property. */
+    /*border-collapse: collapse;*/
+    border-spacing: 0px;
+}
+
+.item {
+	width: 100px;
+	height: 100px;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+.ihover { 
+	margin: 10px;
+}
+
+#gameboard {
+    z-index: 200;
+}
+
+@media only screen and (max-height : 900px) {
+    #main {
+	    padding-top: 0px;
+        margin-top: -20px;
+    }
+}

@@ -1,0 +1,49 @@
+﻿/* 
+ * 
+ * Blue Theme
+ * 
+ */
+
+.playerOne.blue {
+    /*Optionally use 4242D4 here*/
+	background: #3737CC;
+}
+
+.playerTwo.blue {
+	background: #7777E6;
+}
+
+.ihover.one.blue {
+	background-color: #5F5FDE;
+}
+.ihover.two.blue {
+	background-color: #9696F2;
+}
+
+.mask.blue {
+	background-image: url('blue.svg');
+}
+
+.masker.blue {
+	width: 100%;
+	height: 100%;
+    background-image: -ms-radial-gradient(rgba(0,0,255,0.3) 0%, rgba(0,0,255,0) 100%);
+}
+
+.win-backbutton.blue:hover { 
+    border-color: white;
+    background-color:rgba(255, 255, 255, 0.13);
+    border-bottom-color:rgb(255, 255, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    border-top-color:rgb(255, 255, 255);
+}
+.win-backbutton.blue {
+    color: white;
+    border-color: white;
+    background-color:transparent;
+    border-bottom-color:rgb(255, 255, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    border-top-color:rgb(255, 255, 255);
+}

@@ -1,0 +1,52 @@
+﻿/* 
+ * 
+ * Contrast Theme
+ * 
+ */
+
+.playerOne.retro {
+	background: #00BFA0;
+}
+
+.playerTwo.retro {
+	background: #EF9149;
+}
+
+.ihover.one.retro {
+	background-color: #4EE6CD;
+}
+.ihover.two.retro {
+	background-color: #EDA56D;
+}
+
+.mask.retro {
+	background-image: url('retro.svg');
+}
+
+.masker.retro {
+	width: 100%;
+	height: 100%;
+    background-image: -ms-radial-gradient(rgba(84,57,30,0.7) 0%, rgba(84,57,30,0.6) 100%);
+}
+
+.angled.retros {
+	background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+}
+
+.win-backbutton.retro:hover { 
+    border-color: white;
+    background-color:rgba(255, 255, 255, 0.13);
+    border-bottom-color:rgb(255, 255, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    border-top-color:rgb(255, 255, 255);
+}
+.win-backbutton.retro {
+    color: white;
+    border-color: white;
+    background-color:transparent;
+    border-bottom-color:rgb(255, 255, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    border-top-color:rgb(255, 255, 255);
+}

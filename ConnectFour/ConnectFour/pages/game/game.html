@@ -1,28 +1,73 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>game</title>
+    <title>Connect 'em</title>
 
-    <!-- WinJS references -->
+     <!-- WinJS references -->
     <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
     <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
     <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
 
-    <link href="game.css" rel="stylesheet" />
-    <script src="game.js"></script>
+    <!-- Main Styles -->
+    <link href="/pages/game/styles/main.css" rel="stylesheet" />
+    <link href="/pages/game/game.css" rel="stylesheet" />
+    
+    <!-- Themes: -->
+	<link href="/pages/game/styles/themes/standard.css" rel="stylesheet" />
+	<link href="/pages/game/styles/themes/gray.css" rel="stylesheet" />
+	<link href="/pages/game/styles/themes/dark.css" rel="stylesheet" />
+    <!-- Unlockable Themes -->
+    <link href="/pages/game/styles/themes/indecisive.css" rel="stylesheet" />
+    <!-- Paid Themes: -->
+    <link href="/pages/game/styles/themes/rny.css" rel="stylesheet" />
+    <link href="/pages/game/styles/themes/blue.css" rel="stylesheet" />
+    <link href="/pages/game/styles/themes/green.css" rel="stylesheet" />
+    <link href="/pages/game/styles/themes/contrast.css" rel="stylesheet" />
+    <link href="/pages/game/styles/themes/retro.css" rel="stylesheet" />
+    <link href="/pages/game/styles/themes/hell.css" rel="stylesheet" />
+
+    <!-- Page JS -->
+    <script src="/js/settings.js"></script>
+    <script src="/pages/game/game.js"></script>
+	
+    <!-- ConnFour JS -->
+	<script src="/pages/game/js/jquery.js"></script>
+	<script src="/pages/game/js/easing.js"></script>
+	<script src="/pages/game/js/game.js"></script>
+	<script src="/pages/game/js/ai.js"></script>
+	<script src="/pages/game/js/recursiveai.js"></script>
+
 </head>
 <body>
-    <div class="game fragment">
-        <header aria-label="Header content" role="banner">
-            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
-            <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to game</span>
-            </h1>
-        </header>
-        <section aria-label="Main content" role="main">
-            <p>Content goes here.</p>
-        </section>
+    <div id="resume" class="snapProtect">
+        <div class="protectText">
+            Connect 'em <br />
+            <small>Game Paused<br />Click To Resume</small>
+        </div>
     </div>
+    <div id="host" class="stripes angled">
+		<div id="masker" class="masker">
+            <div class="game fragment">
+                <header aria-label="Header content" role="banner">
+                    <button class="win-backbutton" aria-label="Back" id="backbutton"></button>
+                </header>
+                <section aria-label="Main content" role="main">
+                    <div id="main">
+					    <div id="winner" class="winner">
+						    <div id="winenrText" class="title"></div>
+						    <div id="detailsText" class="details"></div>
+						    <div class="startNew">
+							    <button id="newGameWinner">New Game</button>
+						    </div>
+					    </div>
+					    <div id="gameboard">
+						
+					    </div>
+				    </div>
+                </section>
+            </div>
+		</div>
+	</div>
 </body>
 </html>

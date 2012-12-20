@@ -11,23 +11,38 @@
 
     <link href="/css/default.css" rel="stylesheet" />
     <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/js/settings.js"></script>
     <script src="/pages/home/home.js"></script>
+    <script src="/pages/game/js/jquery.js"></script>
+    <script src="/pages/game/js/easing.js"></script>
 </head>
 <body>
-    <div id="host" class="stripes angled">
-		<div id="mask" class="mask">
-			<!-- The content that will be loaded and displayed. -->
+    <div id="hostMain" class="stripesMain angledMain">
+		<div id="maskMain" class="maskMain">
 			<div class="fragment homepage">
 				<header aria-label="Header content" role="banner">
-					<button class="win-backbutton" aria-label="Back" disabled type="button"></button>
-					<h1 class="titlearea win-type-ellipsis" style="overflow: visible;">
-						<span class="pagetitle">Connect Four</span>
-					</h1>
 				</header>
 				<section aria-label="Main content" role="main">
-					 <button id="pageGame">Go to Game Page</button>
+                    <div id="shadowForTiles">
+                        <button class="win-backbutton traverHidden" id="traverseMenu"></button>
+                        <div class="appTitle">
+                            Connect 'em
+                        </div>
+                        <div id="main" class="buttonContainer">
+				            <button id="pageGame" class="button" type="button">New Game</button>
+                            <br />
+                            <button id="options" class="button" type="button">Settings</button>
+                        </div>
+                        <div id="secondary" class="buttonContainer right">
+				            <button id="onePlayer" class="button" type="button">One Player</button>
+                            <br />
+                            <button id="twoPlayer" class="button" type="button">Two Player</button>
+                        </div>
+                    </div>
 				</section>
 			</div>
+            <div id="droppers">
+            </div>
 		</div>
 	</div>
 </body>
